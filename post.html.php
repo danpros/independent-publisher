@@ -65,9 +65,16 @@
 				margin-bottom:0;
 				margin-left: 30px;
 				}
+			.related li {
+				line-height: .80;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				margin: 0;			
+			}
 			.related a {
 				font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 				font-size: 16px;
+				line-height: 1.2em;
 				}
 			</style>
         <h4 class="widget-title" style="padding-top:30px;font-size: 18px;margin-top:0;margin-bottom: 15px;">Related Posts</h4>
