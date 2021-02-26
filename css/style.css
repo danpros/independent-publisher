@@ -551,14 +551,6 @@ img.aligncenter {
 .main-navigation li.current-menu-item a {
 }
 
-.main-navigation li.active a, .main-navigation li.active ul li.active a {
-	text-decoration:underline;
-}
-
-.main-navigation li.active ul li a {
-	text-decoration:none;
-}
-
 
 /*--------------------------------------------------------------
 Accessibility
@@ -2859,8 +2851,6 @@ table th {
 	}
 
 	#masthead .main-navigation li {
-		padding-top: 0;
-		padding-bottom: 0;
 	}
 
 	.site-navigation button,
