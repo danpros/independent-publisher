@@ -71,7 +71,7 @@
 				padding-bottom: 5px;
 				margin: 0;			
 			}
-			.related a {
+			.related li, .related a {
 				font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 				font-size: 16px;
 				line-height: 1.2em;
