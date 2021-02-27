@@ -6,6 +6,12 @@
     top: 3px;
     font-weight: normal;
 }
+.tag-list a:after {
+    content: ', ';
+}
+.tag-list a:last-child:after {
+	content: '';
+}
 </style>
 <article class="post">
 	<header class="entry-header">
@@ -49,7 +55,7 @@
 	<footer class="entry-meta">
 		Posted by <a href="<?php echo $p->authorUrl;?>"><?php echo $p->author;?></a> in <?php echo $p->category;?></span> <span class="sep"> |</span>		
 				
-		<span>Tag: <?php echo $p->tag;?></span>
+		<span class="tag-list">Tag: <?php echo $p->tag;?></span>
 		
 		
 	</footer>
