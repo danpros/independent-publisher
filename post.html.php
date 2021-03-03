@@ -61,7 +61,7 @@
 	</footer>
 	<!-- .entry-meta -->
 	
-    <div class="related" ">
+    <div class="related">
 		<style>
 			.related {
 				border-top: solid 1px #ddd;
