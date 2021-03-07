@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <article class="page">
     <header class="entry-header">
         <h1 class="entry-title p-name">Search results not found!</h1>

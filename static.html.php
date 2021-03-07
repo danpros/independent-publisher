@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <article class="page post">
 		<header class="entry-header">
 		<?php if (login()) { echo '<div class="entry-title-meta"><span><a href="'. $p->url .'/edit?destination=post">Edit</a></span></div>'; } ?>	

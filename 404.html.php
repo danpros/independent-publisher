@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <article class="page hentry">
     <header class="entry-header">
         <h1 class="entry-title p-name">This page doesn't exist!</h1>

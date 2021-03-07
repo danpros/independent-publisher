@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,33 +103,7 @@
 			<aside id="tags-cloud" class="widget">
 				<h3 class="widget-title">Tags</h3>
 				<div class="tagcloud">
-				<?php $tags= tag_cloud(true);
-				
-				// change these font sizes
-				$max_size = 22; // max font size in %
-				$min_size = 8; // min font size in %
-
-				// get the largest and smallest array values
-				$max_qty = max(array_values($tags));
-				$min_qty = min(array_values($tags));
-
-				// find the range of values
-				$spread = $max_qty - $min_qty;
-				if (0 == $spread) { // we don't want to divide by zero
-					$spread = 1;
-				}
-
-				// determine the font-size increment
-				// this is the increase per tag quantity (times used)
-				$step = ($max_size - $min_size)/($spread);
-					
-				foreach ($tags as $tag => $count) {
-					$size = $min_size + (($count - $min_qty) * $step);
-					echo ' <a class="tag-cloud-link" href="'. site_url(). 'tag/'. $tag .'" style="font-size:'. $size .'pt;">'.tag_i18n($tag).'</a> ';
-
-				}
-				
-				?>
+				<?php echo tag_cloud();?>
 				</div>
 			</aside>
 			

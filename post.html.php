@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <style>
 .link-out a:after {
     font-family: "Genericons";
