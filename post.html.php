@@ -93,9 +93,6 @@
 <?php if (disqus()): ?>
     <?php echo disqus($p->title, $p->url) ?>
 <?php endif; ?>
-<?php if (disqus_count()): ?>
-    <?php echo disqus_count() ?>
-<?php endif; ?>
 <?php if (facebook() || disqus()): ?>
 <div class="comments-area" id="comments" style="margin:30px 0 0 0;">
     <?php if (facebook()): ?>
