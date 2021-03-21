@@ -95,7 +95,7 @@
 			</aside>
 			<?php endif;?>
 
-			<aside id="recent-posts" class="widget">
+			<aside id="categories" class="widget">
 				<h3 class="widget-title">Categories</h3>
 				<?php echo category_list();?>
 			</aside>
