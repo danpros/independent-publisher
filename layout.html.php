@@ -121,8 +121,7 @@
 	</div><!-- #main .site-main -->
 
 	<footer id="colophon" class="site-footer">
-		<style>.site-info p {display:inline;margin-right:5px;}</style>
-		<div class="site-info"><?php echo copyright();?><br><p>Designed by <a rel="nofollow" target="_blank" href="https://independentpublisher.me/">Independent Publisher</a></p></div>
+		<div class="site-info"><?php echo copyright();?><br><span>Designed by <a rel="nofollow" target="_blank" href="https://independentpublisher.me/">Independent Publisher</a></span></div>
 		<!-- .site-info -->
 	</footer><!-- #colophon .site-footer -->
     <?php if (analytics()): ?><?php echo analytics() ?><?php endif; ?>

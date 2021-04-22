@@ -54,7 +54,7 @@
 	<!-- .entry-content -->
 		
 	<footer class="entry-meta">
-		Posted by <a href="<?php echo $p->authorUrl;?>"><?php echo $p->author;?></a> in <?php echo $p->category;?></span> <span class="sep"> |</span>		
+		Posted by <a href="<?php echo $p->authorUrl;?>"><?php echo $p->authorName;?></a> in <?php echo $p->category;?></span> <span class="sep"> |</span>		
 				
 		<span class="tag-list">Tag: <?php echo $p->tag;?></span>
 		

@@ -91,7 +91,7 @@
 	
 		<span><a href="<?php echo $p->url;?>"><?php echo format_date($p->date);?></a></span> <span class="sep"> | </span>	
 
-		<span class="cat-links">Posted by <a href="<?php echo $p->authorUrl;?>"><?php echo $p->author;?></a> in <?php echo $p->category;?></span> 
+		<span class="cat-links">Posted by <a href="<?php echo $p->authorUrl;?>"><?php echo $p->authorName;?></a> in <?php echo $p->category;?></span> 
 		
         <?php if (disqus_count()) { ?>
 			<span class="sep"> |</span>		
