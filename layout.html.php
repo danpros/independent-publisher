@@ -1,20 +1,13 @@
 <?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <!DOCTYPE html>
-<html lang="<?php echo str_replace('_', '-', config('language'));?>">
+<html lang="<?php echo blog_language();?>">
 <head>
     <?php echo head_contents();?>
     <title><?php echo $title;?></title>
     <meta name="description" content="<?php echo $description; ?>"/>
     <link rel="canonical" href="<?php echo $canonical; ?>" />
-    <link rel="stylesheet" href="<?php echo site_url();?>themes/independent-publisher/css/style.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php echo site_url();?>themes/independent-publisher/fonts/genericons/genericons.css" type="text/css" media="all" />
-<?php     
-    if (isset($_GET['search'])) {
-        $search = _h($_GET['search']);
-        $url = site_url() . 'search/' . remove_accent($search);
-        header("Location: $url");
-    }
-?>
+    <link rel="stylesheet" href="<?php echo theme_path();?>css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php echo theme_path();?>fonts/genericons/genericons.css" type="text/css" media="all" />
 </head>
 <body class="blog hfeed h-feed enhanced-excerpts archive">
 <?php if (facebook()) { echo facebook(); } ?>
@@ -27,13 +20,13 @@
 			<?php if(is_index()) { ?>
 			<h1 style="margin:0;font-size:2.5em;">
 				<a class="site-logo" href="<?php echo site_url();?>" title="<?php echo blog_title();?>" rel="home">
-					<img class="no-grav" src="<?php echo site_url();?>themes/independent-publisher/img/avatar.png" height="100" width="100" alt="<?php echo blog_title();?>" />
+					<img class="no-grav" src="<?php echo theme_path();?>img/avatar.png" height="100" width="100" alt="<?php echo blog_title();?>" />
 				</a>
 			</h1>
 			<?php } else {?>
 			<h2 style="margin:0;font-size:2.5em;">
 				<a class="site-logo" href="<?php echo site_url();?>" title="<?php echo blog_title();?>" rel="home">
-					<img class="no-grav" src="<?php echo site_url();?>themes/independent-publisher/img/avatar.png" height="100" width="100" alt="<?php echo blog_title();?>" />
+					<img class="no-grav" src="<?php echo theme_path();?>img/avatar.png" height="100" width="100" alt="<?php echo blog_title();?>" />
 				</a>
 			</h2>			
 			<?php } ?>
