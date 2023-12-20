@@ -92,21 +92,18 @@
 				<h3 class="widget-title">Categories</h3>
 				<?php echo category_list();?>
 			</aside>
-			
+
+            <style>#archives ul {list-style-type:none;}</style>
+			<aside id="archives" class="widget">
+				<h3 class="widget-title">Archives</h3>
+				<ul><?php echo archive_list('month-year')?></ul>
+			</aside>
+
 			<aside id="tags-cloud" class="widget">
 				<h3 class="widget-title">Tags</h3>
 				<div class="tagcloud">
 				<?php echo tag_cloud();?>
 				</div>
-			</aside>
-			
-			<aside id="archives" class="widget">
-				<h3 class="widget-title">Archives</h3>
-				<?php $data = archive_list(true);
-				foreach ($data as $year => $month) {
-					echo ' <a href="' . site_url() . 'archive/' . $year . '">' . $year . '</a> <span style="color: #b3b3b1;"> | </span>';
-				}
-				?>
 			</aside>
 
 			</div><!-- #secondary .widget-area -->
