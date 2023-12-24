@@ -83,24 +83,24 @@
 			
 			<?php if (!isset($is_front)):?>
 			<aside id="recent-posts" class="widget">
-				<h3 class="widget-title">Recent Posts</h3>
+				<h3 class="widget-title"><?php echo i18n("Recent_posts");?></h3>
 				<?php echo recent_posts();?>
 			</aside>
 			<?php endif;?>
 
 			<aside id="categories" class="widget">
-				<h3 class="widget-title">Categories</h3>
+				<h3 class="widget-title"><?php echo i18n("Categories");?></h3>
 				<?php echo category_list();?>
 			</aside>
 
             <style>#archives ul {list-style-type:none;}</style>
 			<aside id="archives" class="widget">
-				<h3 class="widget-title">Archives</h3>
+				<h3 class="widget-title"><?php echo i18n("Archives");?></h3>
 				<ul><?php echo archive_list('month-year')?></ul>
 			</aside>
 
 			<aside id="tags-cloud" class="widget">
-				<h3 class="widget-title">Tags</h3>
+				<h3 class="widget-title"><?php echo i18n("Tags");?></h3>
 				<div class="tagcloud">
 				<?php echo tag_cloud();?>
 				</div>

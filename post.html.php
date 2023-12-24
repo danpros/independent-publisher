@@ -54,9 +54,9 @@
 	<!-- .entry-content -->
 		
 	<footer class="entry-meta">
-		Posted by <a href="<?php echo $p->authorUrl;?>"><?php echo $p->authorName;?></a> in <?php echo $p->category;?></span> <span class="sep"> |</span>		
+		<span class="cat-links"><?php echo i18n("Posted_in");?> <?php echo $p->category;?>  <?php echo i18n("by");?> <a href="<?php echo $p->authorUrl;?>"><?php echo $p->authorName;?></a></span> <span class="sep"> |</span>		
 				
-		<span class="tag-list">Tag: <?php echo $p->tag;?></span>
+		<span class="tag-list"><?php echo i18n("Tags");?>: <?php echo $p->tag;?></span>
 		
 		
 	</footer>
@@ -84,7 +84,7 @@
 				line-height: 1.2em;
 				}
 			</style>
-        <h4 class="widget-title" style="padding-top:30px;font-size: 18px;margin-top:0;margin-bottom: 15px;">Related Posts</h4>
+        <h4 class="widget-title" style="padding-top:30px;font-size: 18px;margin-top:0;margin-bottom: 15px;"><?php echo i18n("Related_posts");?></h4>
         <?php echo get_related($p->related);?>
     </div>
 
@@ -108,10 +108,10 @@
 <nav role="navigation" id="nav-below" style="margin-top:30px;" class="site-navigation paging-navigation">
 	<h2 class="screen-reader-text">Post navigation</h2>
     <?php if (!empty($next)): ?>
-	<div class="nav-previous"><a href="<?php echo($next['url']); ?>"><button><span class="meta-nav">←</span> Next post</button></a></div>
+	<div class="nav-previous"><a href="<?php echo($next['url']); ?>"><button><span class="meta-nav">←</span> <?php echo i18n("Next_post");?></button></a></div>
 	<?php endif;?>
 	<?php if (!empty($prev)): ?>
-	<div class="nav-next"><a href="<?php echo($prev['url']); ?>"><button>Previous post <span class="meta-nav">→</span></button></a></div>
+	<div class="nav-next"><a href="<?php echo($prev['url']); ?>"><button><?php echo i18n("Prev_post");?> <span class="meta-nav">→</span></button></a></div>
     <?php endif;?>
 </nav>
 <?php endif; ?>
