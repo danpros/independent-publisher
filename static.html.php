@@ -12,3 +12,14 @@
 	<!-- .entry-content -->
 
 </article>
+<?php if (!empty($next) || !empty($prev)): ?>
+<nav role="navigation" id="nav-below" style="margin-top:30px;" class="site-navigation paging-navigation">
+	<h2 class="screen-reader-text">Post navigation</h2>
+    <?php if (!empty($next)): ?>
+	<div class="nav-previous"><a href="<?php echo($next['url']); ?>"><button><span class="meta-nav">←</span> <?php echo($next['title']); ?></button></a></div>
+	<?php endif;?>
+	<?php if (!empty($prev)): ?>
+	<div class="nav-next"><a href="<?php echo($prev['url']); ?>"><button><?php echo($prev['title']); ?> <span class="meta-nav">→</span></button></a></div>
+    <?php endif;?>
+</nav>
+<?php endif; ?>
