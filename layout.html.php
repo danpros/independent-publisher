@@ -35,27 +35,7 @@
 			</div>
 			<div class="site-description"><?php echo blog_tagline();?></div>
 			<div id="menu-social" class="menu">
-				<ul id="menu-social-items" class="menu-items">
-					<?php if(!empty(config('social.twitter'))):?>
-					<li class="menu-item">
-						<a href="<?php echo config('social.twitter');?>">
-						<span class="screen-reader-text">Twitter</span>
-						</a>
-					</li>
-					<?php endif;?>
-					<?php if(!empty(config('social.facebook'))):?>
-					<li class="menu-item">
-						<a href="<?php echo config('social.facebook');?>">
-						<span class="screen-reader-text">Facebook</span>
-						</a>
-					</li>
-					<?php endif;?>
-					<li class="menu-item">
-						<a href="<?php echo site_url();?>feed/rss">
-						<span class="screen-reader-text">RSS</span>
-						</a>
-					</li>
-				</ul>
+				<?php echo social();?>
 			</div>
 		</div>
 

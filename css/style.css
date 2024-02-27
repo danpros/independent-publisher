@@ -3065,3 +3065,12 @@ table th {
 .main-navigation ul li:hover > ul {
 	display: block;
 }
+
+.social-logo a {
+  color: #BBC7D3;
+  font-size: 26px!important;
+}
+.social-logo a:hover {
+  transition: color ease 0.3s;
+  color: #4A4A4E;
+}
