@@ -17,7 +17,7 @@
 <article class="post">
 	<header class="entry-header">
 		<div class="entry-title-meta">
-			<span><a href="<?php echo $p->url;?>" title="<?php echo $p->title;?>" rel="bookmark"><time class="entry-date dt-published"><?php echo format_date($p->date);?></time></a></span> <?php if (login()) { echo '<span class="sep"> |</span> <span><a href="'. $p->url .'/edit?destination=post">Edit</a></span>'; } ?>
+			<span><a href="<?php echo $p->url;?>" title="<?php echo $p->title;?>" rel="bookmark"><time class="entry-date dt-published"><?php echo format_date($p->date);?></time></a></span> <?php if (authorized($p)) { echo '<span class="sep"> |</span> <span><a href="'. $p->url .'/edit?destination=post">Edit</a></span>'; } ?>
 		</div>
 		<?php if (!empty($p->link)) { ?>
 		<h1 class="entry-title p-name link-out" style="margin-bottom:20px;"><a target="_blank" href="<?php echo $p->link;?>"><?php echo $p->title;?></a></h1>
