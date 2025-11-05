@@ -3074,3 +3074,8 @@ table th {
   transition: color ease 0.3s;
   color: #4A4A4E;
 }
+
+#search-widget .search-input,
+#search-widget .search-button {
+  margin-bottom: 5px;
+}

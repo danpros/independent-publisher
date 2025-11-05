@@ -1,0 +1,51 @@
+{
+  "name": "Independent Publisher",
+  "version": "2.1",
+  "author": "Raam Dev",
+  "homepage": "https://raamdev.com",
+  "description": "Independent Publisher theme ported to HTMLy theme.",
+  "settings": [
+    {
+      "type": "checkbox",
+      "name": "search_widget",
+      "label": "Search Widget",
+      "value": "",
+      "info": "Enable Search widget"
+    },
+    {
+      "type": "checkbox",
+      "name": "recent_posts",
+      "label": "Recent Posts",
+      "value": "",
+      "info": "Enable Recent Posts widget"
+    },
+    {
+      "type": "checkbox",
+      "name": "popular_posts",
+      "label": "Popular Posts",
+      "value": "",
+      "info": "Enable Popular Posts widget. The views counter need to be enabled first."
+    },
+    {
+      "type": "checkbox",
+      "name": "archive",
+      "label": "Archive",
+      "value": "",
+      "info": "Enable Archive widget"
+    },
+    {
+      "type": "checkbox",
+      "name": "category_list",
+      "label": "Category List",
+      "value": "",
+      "info": "Enable Category List widget"
+    },
+    {
+      "type": "checkbox",
+      "name": "tagcloud",
+      "label": "TagCloud",
+      "value": "",
+      "info": "Enable TagCloud widget"
+    }
+  ]
+}

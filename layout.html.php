@@ -4,7 +4,7 @@
 <head>
     <?php echo head_contents();?>
     <?php echo $metatags;?>
-    <link rel="stylesheet" href="<?php echo theme_path();?>css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php echo theme_path();?>css/style.css?v=1" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php echo theme_path();?>fonts/genericons/genericons.css" type="text/css" media="all" />
 </head>
 <body class="blog hfeed h-feed enhanced-excerpts archive">
@@ -58,31 +58,50 @@
 		</div><!-- #primary .content-area -->
 
 		<div id="secondary" class="widget-area" role="complementary">
+
+			<?php if (theme_config('search_widget')):?>
+			<aside id="search-widget" class="widget">
+				<?php echo search();?>
+			</aside>
+			<?php endif;?>
 			
-			<?php if (!isset($is_front)):?>
+			<?php if (theme_config('recent_posts')):?>
 			<aside id="recent-posts" class="widget">
 				<h3 class="widget-title"><?php echo i18n("Recent_posts");?></h3>
 				<?php echo recent_posts();?>
 			</aside>
 			<?php endif;?>
 
+			<?php if (theme_config('popular_posts')):?>
+			<aside id="popular-posts" class="widget">
+				<h3 class="widget-title"><?php echo i18n("popular_posts");?></h3>
+				<?php echo popular_posts();?>
+			</aside>
+			<?php endif;?>
+
+			<?php if (theme_config('category_list')):?>
 			<aside id="categories" class="widget">
 				<h3 class="widget-title"><?php echo i18n("Categories");?></h3>
 				<?php echo category_list();?>
 			</aside>
+			<?php endif;?>
 
+			<?php if (theme_config('archive')):?>
             <style>#archives ul {list-style-type:none;}</style>
 			<aside id="archives" class="widget">
 				<h3 class="widget-title"><?php echo i18n("Archives");?></h3>
 				<ul><?php echo archive_list('month-year')?></ul>
 			</aside>
+			<?php endif;?>
 
+			<?php if (theme_config('tagcloud')):?>
 			<aside id="tags-cloud" class="widget">
 				<h3 class="widget-title"><?php echo i18n("Tags");?></h3>
 				<div class="tagcloud">
 				<?php echo tag_cloud();?>
 				</div>
 			</aside>
+			<?php endif;?>
 
 			</div><!-- #secondary .widget-area -->
 
